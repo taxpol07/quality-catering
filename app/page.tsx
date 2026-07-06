@@ -89,7 +89,7 @@ export default function HomePage() {
             <span className="text-xl sm:text-2xl font-black tracking-widest text-white uppercase ml-2">Quality</span>
           </div>
           <Link href="/admin/login" className="text-xs sm:text-sm font-bold text-amber-500 hover:text-amber-400 uppercase tracking-widest transition-colors">
-            Admin
+            Admin Login
           </Link>
         </div>
       </nav>
