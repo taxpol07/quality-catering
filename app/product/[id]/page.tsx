@@ -71,7 +71,8 @@ export default function ProductDetailPage() {
   }
 
   // Müşteri WhatsApp butonuna tıkladığında yazacak otomatik mesaj:
-  const whatsappMessage = `Hello, I'm interested in the ${product.brand} ${product.model} - ${product.title} listed for £${product.price}. Is it still available?`;
+  // Müşteri WhatsApp butonuna tıkladığında yazacak otomatik mesaj:
+  const whatsappMessage = `Hello, I'm interested in the ${product.brand} ${product.model} - ${product.title} listed for £${product.price}. Dimensions: ${product.dimensions || "N/A"}. Is it still available?`;
   const encodedWhatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
