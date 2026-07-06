@@ -46,9 +46,9 @@ export default function HomePage() {
   // ==========================================
   // İLETİŞİM VE LOKASYON BİLGİLERİ (BURALARI DOLDUR)
   // ==========================================
-  const WHATSAPP_NUMBER = "447000000000"; // Örn: 447123456789
-  const WAREHOUSE_ADDRESS = "Unit 1, Premier Industrial Estate, London"; // Depo Adresin
-  const WAREHOUSE_POSTCODE = "NW10 7RQ"; // Posta Kodun
+  const WHATSAPP_NUMBER = "447500275753"; // Örn: 447123456789
+  const WAREHOUSE_ADDRESS = "Unit M.K CATERING, Oldham, Manchester"; // Depo Adresin
+  const WAREHOUSE_POSTCODE = "OL8 2JP"; // Posta Kodun
   // ==========================================
 
   useEffect(() => {
