@@ -44,11 +44,11 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   // ==========================================
-  // İLETİŞİM VE LOKASYON BİLGİLERİ (BURALARI DOLDUR)
+  // İLETİŞİM VE LOKASYON BİLGİLERİ 
   // ==========================================
-  const WHATSAPP_NUMBER = "447500275753"; // Örn: 447123456789
-  const WAREHOUSE_ADDRESS = "Unit M.K CATERING, Oldham, Manchester"; // Depo Adresin
-  const WAREHOUSE_POSTCODE = "OL8 2JP"; // Posta Kodun
+  const WHATSAPP_NUMBER = "447500275753"; 
+  const WAREHOUSE_ADDRESS = "Unit M.K CATERING, Oldham, Manchester"; 
+  const WAREHOUSE_POSTCODE = "OL8 2JP"; 
   // ==========================================
 
   useEffect(() => {
@@ -90,12 +90,12 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#0a0f1a] text-slate-200 font-sans selection:bg-amber-500 selection:text-slate-900 flex flex-col">
       
-      {/* 1. NAVBAR */}
+      {/* 1. NAVBAR (Marka Güncellendi) */}
       <nav className="absolute top-0 w-full z-50 bg-transparent border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg sm:rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(245,158,11,0.5)]">
-              <span className="text-[#0a0f1a] font-black text-lg sm:text-xl">Q</span>
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg sm:rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(245,158,11,0.5)]">
+              <span className="text-[#0a0f1a] font-black text-sm sm:text-base">M.K.</span>
             </div>
             <span className="text-xl sm:text-2xl font-black tracking-widest text-white uppercase ml-2">Quality</span>
           </div>
@@ -105,15 +105,15 @@ export default function HomePage() {
         </div>
       </nav>
 
-      {/* 2. HERO SECTION */}
+      {/* 2. HERO SECTION (Marka Güncellendi) */}
       <div className="relative pt-28 pb-12 sm:pt-40 sm:pb-20 lg:pt-48 lg:pb-24 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-amber-500/10 blur-[120px] rounded-full pointer-events-none"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white tracking-tighter mb-4 sm:mb-6 leading-tight">
-            Premium Catering <br />
+            M.K. Quality <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-500 to-amber-600">
-              Equipment
+              Catering Equipment
             </span>
           </h1>
           <p className="mt-2 sm:mt-4 text-sm sm:text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-medium px-4">
@@ -122,7 +122,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* YENİ EKLENEN 1: GÜVEN BANDI (Trust Badges) */}
+      {/* 3. GÜVEN BANDI (Trust Badges) */}
       <div className="bg-[#111827] border-y border-white/5 py-6 sm:py-8 mb-10 shadow-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x divide-white/5">
@@ -150,7 +150,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* 3. FİLTRELEME VE ARAMA */}
+      {/* 4. FİLTRELEME VE ARAMA */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex-grow">
         <div className="mb-8 space-y-5">
           <div className="relative max-w-md mx-auto sm:mx-0">
@@ -184,7 +184,7 @@ export default function HomePage() {
           )}
         </div>
 
-        {/* 4. ÜRÜNLER GRID */}
+        {/* 5. ÜRÜNLER GRID */}
         {loading ? (
            <div className="flex justify-center py-20"><div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-amber-500"></div></div>
         ) : filteredItems.length === 0 ? (
@@ -248,9 +248,8 @@ export default function HomePage() {
           </div>
         )}
 
-        {/* YENİ EKLENEN 2: TOPLU ALIM / YENİ RESTORAN BANNERI */}
+        {/* 6. TOPLU ALIM / YENİ RESTORAN BANNERI */}
         <div className="bg-gradient-to-r from-amber-600 to-amber-400 rounded-3xl p-8 sm:p-12 mb-20 shadow-2xl shadow-amber-500/20 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
-          {/* Arkaplan Deseni */}
           <div className="absolute right-0 top-0 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
           
           <div className="relative z-10 text-center md:text-left">
@@ -274,7 +273,38 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* YENİ EKLENEN 3: KURUMSAL FOOTER */}
+      {/* YENİ EKLENEN 4: WHY CHOOSE US (Hizmetlerimiz) */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mb-20">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-widest">Why Choose <span className="text-amber-500">M.K. Quality?</span></h2>
+          <p className="text-sm text-slate-400 mt-3 max-w-2xl mx-auto">More than just a supplier. We are your commercial kitchen partner.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-[#111827] border border-white/5 p-8 rounded-3xl text-center hover:border-amber-500/30 transition-colors shadow-lg">
+            <div className="w-16 h-16 bg-amber-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <span className="text-3xl">🛠️</span>
+            </div>
+            <h3 className="text-white font-bold text-lg mb-2">Fully Refurbished</h3>
+            <p className="text-sm text-slate-400">Every used machine is stripped down, thoroughly cleaned, and professionally restored to peak performance.</p>
+          </div>
+          <div className="bg-[#111827] border border-white/5 p-8 rounded-3xl text-center hover:border-amber-500/30 transition-colors shadow-lg">
+            <div className="w-16 h-16 bg-amber-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <span className="text-3xl">💷</span>
+            </div>
+            <h3 className="text-white font-bold text-lg mb-2">Unbeatable Value</h3>
+            <p className="text-sm text-slate-400">Get industry-leading brands like Rational, Hobart, and Lincat at a fraction of their brand-new price.</p>
+          </div>
+          <div className="bg-[#111827] border border-white/5 p-8 rounded-3xl text-center hover:border-amber-500/30 transition-colors shadow-lg">
+            <div className="w-16 h-16 bg-amber-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <span className="text-3xl">🤝</span>
+            </div>
+            <h3 className="text-white font-bold text-lg mb-2">Trusted Partner</h3>
+            <p className="text-sm text-slate-400">From single fryers to complete restaurant setups, we provide honest equipment advice and ongoing support.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* 5. KURUMSAL FOOTER (Marka Güncellendi) */}
       <footer className="bg-[#05080f] border-t border-slate-800 pt-16 pb-8 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
@@ -282,8 +312,8 @@ export default function HomePage() {
             {/* Marka & Hakkımızda */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-lg flex items-center justify-center">
-                  <span className="text-[#0a0f1a] font-black">Q</span>
+                <div className="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center">
+                  <span className="text-[#0a0f1a] font-black text-sm">M.K.</span>
                 </div>
                 <span className="text-xl font-black tracking-widest text-white uppercase">Quality</span>
               </div>
@@ -324,7 +354,7 @@ export default function HomePage() {
           </div>
 
           <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600 font-medium">
-            <p>© {new Date().getFullYear()} Quality Catering Equipment. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} M.K. Quality Catering. All rights reserved.</p>
             <p>All prices listed exclude VAT.</p>
           </div>
         </div>
