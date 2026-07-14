@@ -13,13 +13,13 @@ export const viewport: Viewport = {
 
 // UYGULAMA KİMLİĞİ VE SEO AYARLARI
 export const metadata: Metadata = {
-  title: "Keser Catering Warehouse",
+  title: "M.K. Catering Warehouse",
   description: "En yeni endüstriyel mutfak ekipmanları",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Keser",
+    title: "M.K.",
   },
 };
 
